@@ -58,15 +58,12 @@ header {
 }
 .slideshow {
   margin-bottom: 2rem;
+  padding: 0 1rem;
 }
-.slide-img,
-.slick-slide {
-  display: block;
-  width: 95vw;
-  margin: auto;
+.slick img {
   box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+  border-radius: 8px;
 }
-
 .cta-icon-wrapper {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
@@ -133,4 +130,27 @@ button {
 
 li.slick-active button {
   background: white;
+}
+
+/* Media Queries */
+
+@media screen and (max-width: 1000px) {
+  body {
+    padding: 0 1rem;
+  }
+  .cta-icon-wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .cta-icon-wrapper {
+    grid-template-columns: 1fr;
+  }
+  .movies {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
