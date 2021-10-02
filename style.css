@@ -1,0 +1,91 @@
+:root {
+  /* Baackground Colors */
+  --accent-color: #0063e5;
+  --primary-color: #040714;
+  --secondary-color: #090b13;
+
+  /* Text Colors */
+  --black: #000000;
+  --ligh-gray: #f9f9f9;
+  --off-white: ##f3f3f3;
+}
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Avenir-Roman", sans-serif;
+  font-size: 1rem;
+  background: var(--secondary-color);
+}
+img {
+  width: 100%;
+}
+.container {
+  max-width: 1200px;
+  width: 100%;
+  margin: 0 auto;
+}
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 2rem;
+}
+.logo {
+  width: 100px;
+}
+.login-btn {
+  text-decoration: none;
+  color: white;
+  display: inline-block;
+  border: 1px solid white;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+}
+.slideshow {
+  margin-bottom: 2rem;
+}
+.slide-img,
+.slick-slide {
+  display: block;
+  width: 95vw;
+  margin: auto;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+/*  */
+
+.slick-dots {
+  display: flex;
+  justify-content: center;
+
+  margin: 0;
+  padding: 1rem 0;
+
+  list-style-type: none;
+}
+.slick-dots li {
+  margin: 0 0.25rem;
+}
+
+button {
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  padding: 0;
+  cursor: pointer;
+
+  border: none;
+  border-radius: 100%;
+  background: #090e24;
+  text-indent: -9999px;
+}
+
+li.slick-active button {
+  background: white;
+}
